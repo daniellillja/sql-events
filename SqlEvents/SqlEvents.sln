@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlEvents.CLI", "SqlEvents.CLI\SqlEvents.CLI.csproj", "{4F6D572B-6BC3-4ADB-B37F-60FA76E75572}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlEvents.App", "SqlEvents.App\SqlEvents.App.csproj", "{BFA384B2-E155-4D29-9740-733D28C8AF14}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{117D2BCB-7B0F-456D-B5FE-65DC9FAF2371}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlEvents.Data.SqlClient.IntegrationTests", "SqlEvents.Data.SqlClient.IntegrationTests\SqlEvents.Data.SqlClient.IntegrationTests.csproj", "{902F003F-6BA4-475F-BC5C-E3C80F4AD836}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlEvents.Database.Migrations", "SqlEvents.Database.Migrations\SqlEvents.Database.Migrations.csproj", "{C1D36F35-21E0-4281-B4B3-803650766D8C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2086032E-F927-4B80-A912-5D7B8E37B897} = {2086032E-F927-4B80-A912-5D7B8E37B897}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{877691D5-D446-4805-BD05-9FD1C96BF489}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlEvents.Data.SqlClient", "SqlEvents.Data.SqlClient\SqlEvents.Data.SqlClient.csproj", "{386F28DF-B820-4A92-8FA8-63E6D59B196D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BE433234-AEE9-4CE8-AC22-37D5B1075A78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlEvents.Database.Migrations.IntegrationTests", "SqlEvents.Database.Migrations.IntegrationTests\SqlEvents.Database.Migrations.IntegrationTests.csproj", "{54D17208-68D7-4B06-B6F1-8D9E0905FF1C}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SqlEvents.Database", "SqlEvents.Database\SqlEvents.Database.sqlproj", "{2086032E-F927-4B80-A912-5D7B8E37B897}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F6D572B-6BC3-4ADB-B37F-60FA76E75572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F6D572B-6BC3-4ADB-B37F-60FA76E75572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F6D572B-6BC3-4ADB-B37F-60FA76E75572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F6D572B-6BC3-4ADB-B37F-60FA76E75572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFA384B2-E155-4D29-9740-733D28C8AF14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA384B2-E155-4D29-9740-733D28C8AF14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA384B2-E155-4D29-9740-733D28C8AF14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA384B2-E155-4D29-9740-733D28C8AF14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{902F003F-6BA4-475F-BC5C-E3C80F4AD836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{902F003F-6BA4-475F-BC5C-E3C80F4AD836}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{902F003F-6BA4-475F-BC5C-E3C80F4AD836}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{902F003F-6BA4-475F-BC5C-E3C80F4AD836}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D36F35-21E0-4281-B4B3-803650766D8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D36F35-21E0-4281-B4B3-803650766D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D36F35-21E0-4281-B4B3-803650766D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D36F35-21E0-4281-B4B3-803650766D8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{386F28DF-B820-4A92-8FA8-63E6D59B196D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{386F28DF-B820-4A92-8FA8-63E6D59B196D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{386F28DF-B820-4A92-8FA8-63E6D59B196D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{386F28DF-B820-4A92-8FA8-63E6D59B196D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54D17208-68D7-4B06-B6F1-8D9E0905FF1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54D17208-68D7-4B06-B6F1-8D9E0905FF1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54D17208-68D7-4B06-B6F1-8D9E0905FF1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54D17208-68D7-4B06-B6F1-8D9E0905FF1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2086032E-F927-4B80-A912-5D7B8E37B897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2086032E-F927-4B80-A912-5D7B8E37B897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2086032E-F927-4B80-A912-5D7B8E37B897}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2086032E-F927-4B80-A912-5D7B8E37B897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2086032E-F927-4B80-A912-5D7B8E37B897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2086032E-F927-4B80-A912-5D7B8E37B897}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{902F003F-6BA4-475F-BC5C-E3C80F4AD836} = {BE433234-AEE9-4CE8-AC22-37D5B1075A78}
+		{C1D36F35-21E0-4281-B4B3-803650766D8C} = {117D2BCB-7B0F-456D-B5FE-65DC9FAF2371}
+		{386F28DF-B820-4A92-8FA8-63E6D59B196D} = {877691D5-D446-4805-BD05-9FD1C96BF489}
+		{54D17208-68D7-4B06-B6F1-8D9E0905FF1C} = {BE433234-AEE9-4CE8-AC22-37D5B1075A78}
+		{2086032E-F927-4B80-A912-5D7B8E37B897} = {117D2BCB-7B0F-456D-B5FE-65DC9FAF2371}
+	EndGlobalSection
+EndGlobal

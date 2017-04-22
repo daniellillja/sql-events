@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Logs]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Text] NCHAR(100) NOT NULL
+)

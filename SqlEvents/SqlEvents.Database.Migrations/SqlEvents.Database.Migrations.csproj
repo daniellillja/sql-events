@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.3.0" />
+    <MigrationScripts Include="..\SqlEvents.Database\*.sql" />
+  </ItemGroup>
+
+<!--
+  <ItemGroup>
+    <None Remove="Scripts\2017-04-21-0-CreateLogsTable.sql" />
+    <None Remove="Scripts\2017-04-22-0-CreateMigrationsTable.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\2017-04-21-0-CreateLogsTable.sql" />
+    <EmbeddedResource Include="Scripts\2017-04-22-0-CreateMigrationsTable.sql" />
+  </ItemGroup>
+-->
+
+  <ItemGroup>
+    <ProjectReference Include="..\SqlEvents.Data.SqlClient\SqlEvents.Data.SqlClient.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+<!--
+  <Target Name="CopyScripts" AfterTargets="BeforeBuild">
+    <Copy SourceFiles="@(MigrationScripts)" DestinationFolder="Scripts\" />
+  </Target>
+-->
+
+</Project>
